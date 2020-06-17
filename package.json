@@ -1,14 +1,14 @@
 {
-  "name": "sqlite3-jest-memory-leak",
+  "name": "fibers-jest-memory-leak",
   "version": "1.0.0",
   "scripts": {
-    "test": "node --expose-gc ./node_modules/.bin/jest --no-cache --runInBand --watchAll --logHeapUsage --detectLeaks"
+    "test": "node --expose-gc ./node_modules/.bin/jest --runInBand --watchAll --logHeapUsage"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "better-sqlite3": "^7.1.0",
     "jest": "^26.0.1",
-    "sqlite3": "^4.2.0",
     "weak-napi": "^2.0.2"
   }
 }
